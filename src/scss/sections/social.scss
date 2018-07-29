@@ -1,0 +1,39 @@
+.social {
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);;
+            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);;
+
+    &__inner {
+        display: flex;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        padding: 23px 0;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0 0 14px;
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #86878B;
+    }
+
+    &__links {
+        display: flex;
+        -webkit-justify-content: space-around;
+                justify-content: space-around;
+        -webkit-align-items: center;
+                align-items: center;
+        width: 100%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #cccccc;
+    }
+}

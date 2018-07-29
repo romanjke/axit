@@ -1,0 +1,17 @@
+section.social
+    .container
+        .social__inner
+            .social__col
+                h2.social__title Social Media
+
+                .social__text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+
+            .social__col.social__links
+                - var linkItems = ['facebook-f', 'twitter', 'google-plus', 'pinterest', 'instagram', 'stumbleupon', 'rss']
+                - var linkUrls = ['facebook.com', 'twitter.com', 'plus.google.com', 'pinterest.com', 'instagram.com', 'stumbleupon.com', '#']
+
+                each item, key in linkItems
+                    a(href="http://" + linkUrls[key] target="_blank").social__link
+                        i(class="fa fa-3x fa-" + item aria-hidden="true")
