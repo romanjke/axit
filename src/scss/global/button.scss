@@ -1,0 +1,22 @@
+.button {
+    padding: 15px 32px;
+    text-decoration: none;
+    color: #fff;
+    font-family: $ff-main;
+    font-weight: bold;
+
+    &--transparent {
+        background: transparent;
+        -webkit-transition: 0.3s;
+         -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+           -o-transition: 0.3s;
+              transition: 0.3s;
+        border: 2px solid #fff;
+
+        &:hover {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+}

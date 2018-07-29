@@ -1,0 +1,40 @@
+.hero {
+    min-height: 640px;
+    background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
+    padding: 110px 0 140px;
+
+    &__inner {
+        display: flex;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-align-items: flex-end;
+                align-items: flex-end;
+    }
+
+    &__title {
+        position: relative;
+        color: #fff;
+        margin: 34px 0 82px;
+        font-family: $ff-secondary;
+        font-size: 36px;
+        font-weight: normal;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            width: 64px;
+            height: 2px;
+            background: #fff;
+        }
+    }
+
+    &__text {
+        font-family: $ff-secondary;
+        font-weight: lighter;
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 45px;
+    }
+}

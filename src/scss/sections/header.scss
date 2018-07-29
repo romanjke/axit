@@ -1,0 +1,15 @@
+.header {
+    background-color: $header-bg;
+
+    &__inner {
+        display: flex;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-align-items: center;
+                align-items: center;
+    }
+
+    &__logo {
+        padding: 23px 0 22px 0;
+    }
+}
