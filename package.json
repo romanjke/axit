@@ -1,5 +1,5 @@
 {
-  "name": "itvdn-landing",
+  "name": "axit",
   "version": "1.0.0",
   "description": "This is langing tutorial for ITVDN students",
   "main": "index.js",
@@ -21,11 +21,11 @@
     "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-pug": "^3.3.0",
+    "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^2.1.2",
+    "gulp-uglify": "^3.0.1",
     "gulp.spritesmith": "^6.3.0",
     "rimraf": "^2.6.1"
   },
