@@ -1,0 +1,49 @@
+section.pricing
+    .container
+        h2.pricing__title.main-title PRICING OPTIONS
+
+        .pricing__text.text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        ul.pricing__list
+            li.pricing__item
+                .pricing__header.
+                    Basic
+                .pricing__payment
+                    .pricing__price
+                        span.pricing__price-part-1 $
+                        span.pricing__price-part-2 0
+                    .pricing__payment-text Free for life
+                .pricing__popular
+                ul.pricing__options
+                    - var options = ['1 gb of space', '10 gb of bandwidth', '3 websites', 'Basic Customization', 'wordpress integration', 'email support']
+                    each option in options
+                        li.pricing__option= option
+
+            li.pricing__item
+                .pricing__header.
+                    Professional
+                .pricing__payment
+                    .pricing__price
+                        span.pricing__price-part-1 $
+                        span.pricing__price-part-2 19
+                    .pricing__payment-text Monthly Payment
+                .pricing__popular.pricing__popular--active Our most popular
+                ul.pricing__options
+                    - var options = ['5 gb of space', '50 gb of bandwidth', '12 websites', 'Advanced Customization', 'wordpress integration', 'email support']
+                    each option in options
+                        li.pricing__option= option
+
+            li.pricing__item
+                .pricing__header.
+                    Enterprise
+                .pricing__payment
+                    .pricing__price
+                        span.pricing__price-part-1 $
+                        span.pricing__price-part-2 70
+                    .pricing__payment-text Monthly Payment
+                .pricing__popular
+                ul.pricing__options
+                    - var options = ['Unlimited space', 'Unlimited bandwidth', '100 websites', 'Advanced Customization', 'wordpress integration', '24/7 customer support']
+                    each option in options
+                        li.pricing__option= option
