@@ -1,7 +1,8 @@
 .social {
-    background: #fff;
-    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);;
-            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);;
+    position: relative;
+    background: $even-bg;
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
+            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
 
     &__inner {
         display: flex;
@@ -11,16 +12,7 @@
     }
 
     &__title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1;
         margin: 0 0 14px;
-    }
-
-    &__text {
-        font-size: 0.875rem;
-        line-height: 1.5;
-        color: #86878B;
     }
 
     &__links {

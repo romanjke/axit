@@ -1,0 +1,51 @@
+.tabs
+    ul.tabs__list
+        li.tabs__item
+            a(href="#tab-1" onclick="openTab(event, 'tab1')")#defaultOpen.tabs__link TAB1
+        li.tabs__item
+            a(href="#tab-2" onclick="openTab(event, 'tab2')").tabs__link TAB2
+        li.tabs__item
+            a(href="#tab-3" onclick="openTab(event, 'tab3')").tabs__link TAB3
+
+    #tab1.tabs__content
+        .tabs__info
+            h2.tabs__title.alt-title Tabs with soft transitioning effect.
+
+            .tabs__text.text
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+
+            button.button.button--orange(href="#") Download
+
+        .tabs__image
+            img(src="img/city.png" alt="Город")
+
+    #tab2.tabs__content
+        .tabs__info
+            h2.tabs__title.alt-title Tabs with soft transitioning effect.
+
+            .tabs__text.text
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
+
+            button.button.button--orange(href="#") Download
+
+    #tab3.tabs__content
+        .tabs__info
+            h2.tabs__title.alt-title Tabs with soft transitioning effect.
+
+            .tabs__text.text
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.

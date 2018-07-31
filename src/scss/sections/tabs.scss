@@ -1,0 +1,60 @@
+.tabs {
+    display: flex;
+
+    /* Style the tab */
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 1px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Style the buttons inside the tab */
+    &__link {
+        display: block;
+        background-color: #333333;
+        cursor: pointer;
+        padding: 50px 35px;
+        transition: 0.3s;
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            background-color: lighten(#333333, 15%);
+        }
+
+        &--active {
+            background-color: $primary-color;
+        }
+    }
+
+    /* Style the tab content */
+    &__content {
+        display: none;
+        padding: 10px 0 0 100px;
+    }
+
+    &__info {
+        padding-right: 105px;
+    }
+
+    &__title {
+        margin: 0 0 58px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    &__image {
+        padding-top: 1.25rem;
+    }
+}

@@ -19,4 +19,21 @@
             border-color: $primary-color;
         }
     }
+
+    &--orange {
+        background: $primary-color;
+        border: none;
+        padding: 16px 25px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        -webkit-transition: 0.3s;
+           -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+             -o-transition: 0.3s;
+                transition: 0.3s;
+
+        &:hover {
+            background: $primary-color-light;
+        }
+    }
 }

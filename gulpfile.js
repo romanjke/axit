@@ -44,7 +44,7 @@ gulp.task('js', function() {
             'src/js/main.js'
         ])
         .pipe(srcmaps.init())
-        // .pipe(concat('main.min.js'))
+        .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(srcmaps.write())
         .pipe(gulp.dest('dist/js'));
