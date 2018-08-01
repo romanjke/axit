@@ -3,6 +3,22 @@
     text-align: center;
     background: $even-bg;
 
+    &__title {
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 64px;
+
+        &:after {
+            @include centerer-x();
+
+            content: '';
+            bottom: -32px;
+            width: 64px;
+            height: 2px;
+            background: $primary-color;
+        }
+    }
+
     &__form-fields {
         display: flex;
         -webkit-justify-content: space-between;

@@ -1,9 +1,10 @@
 .button {
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-decoration: none;
     color: #fff;
     font-family: $ff-main;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 1;
 
     &--transparent {
         background: transparent;
@@ -33,7 +34,7 @@
                 transition: 0.3s;
 
         &:hover {
-            background: $primary-color-light;
+            background: darken($primary-color-light, 15%);
         }
     }
 }

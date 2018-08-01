@@ -1,14 +1,12 @@
 .social {
     position: relative;
+    padding: 22px 0;
     background: $even-bg;
     -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
             box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
 
-    &__inner {
-        display: flex;
-        -webkit-justify-content: space-between;
-                justify-content: space-between;
-        padding: 23px 0;
+    &__info {
+        width: 36%;
     }
 
     &__title {
@@ -17,11 +15,12 @@
 
     &__links {
         display: flex;
-        -webkit-justify-content: space-around;
-                justify-content: space-around;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
         -webkit-align-items: center;
                 align-items: center;
-        width: 100%;
+        width: 64%;
+        padding: 0 20px;
     }
 
     &__link {

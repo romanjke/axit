@@ -3,12 +3,28 @@
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.align-items-center {
+    -webkit-align-items: center;
+                align-items: center;
+}
+
+.align-items-end {
+    -webkit-align-items: flex-end;
+            align-items: flex-end;
+}
+
 .main-title {
     font-family: Raleway;
     font-size: 2.25rem;
     font-weight: 400;
-    line-height: 1.2;
-    color: #000;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .alt-title {

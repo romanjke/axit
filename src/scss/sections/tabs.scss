@@ -1,5 +1,4 @@
 .tabs {
-    display: flex;
 
     /* Style the tab */
     &__list {
@@ -23,7 +22,8 @@
         padding: 50px 35px;
         transition: 0.3s;
         font-size: 0.875rem;
-        font-weight: bold;
+        font-weight: 700;
+        line-height: 1;
         text-decoration: none;
         color: #fff;
 

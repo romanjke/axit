@@ -3,24 +3,21 @@
     background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
     padding: 110px 0 140px;
 
-    &__inner {
-        display: flex;
-        -webkit-justify-content: space-between;
-                justify-content: space-between;
-        -webkit-align-items: flex-end;
-                align-items: flex-end;
+    &__logo {
+        margin-bottom: 34px;
     }
 
     &__title {
         position: relative;
         color: #fff;
-        margin: 34px 0 82px;
+        margin: 0 0 82px;
+        line-height: 1.2;
 
         &:after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -40px;
+            bottom: -41px;
             width: 64px;
             height: 2px;
             background: #fff;
@@ -43,9 +40,10 @@
         background: #f5f5f5;
         text-align: center;
         font-family: $ff-main;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 1.25rem;
-        padding: 19px 40px;
+        line-height: 1;
+        padding: 20px 0;
         -webkit-border-radius: 5px 5px 0 0;
                 border-radius: 5px 5px 0 0;
     }
@@ -55,17 +53,18 @@
     }
 
     &__form-fields {
-        padding: 30px 35px 50px 40px;
-        background: #FFF;
+        padding: 30px 38px 50px 38px;
+        background: #fff;
     }
 
     &__form-button {
-        background: $primary-color-light;
         color: #fff;
+        font-weight: 600;
+        line-height: 1;
+        background: $primary-color-light;
         border: none;
         padding: 22px 40px;
         width: 100%;
-        font-weight: bold;
         -webkit-transition: 0.3s;
            -moz-transition: 0.3s;
             -ms-transition: 0.3s;
@@ -75,7 +74,7 @@
                 border-radius: 0 0 5px 5px;
 
         &:hover {
-            background: lighten($primary-color-light, 7%);
+            background: darken($primary-color-light, 15%);
         }
     }
 }
