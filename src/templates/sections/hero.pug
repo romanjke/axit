@@ -19,4 +19,14 @@ section.hero
                 button.button.button--transparent(href="#") Download
 
             .hero__col
-                include form
+                form(method="post" action="#").hero__form
+
+                    .hero__form-header.
+                        Try Your #[span.hero__form-header-part FREE] Trial Today
+
+                    .hero__form-fields
+                        input.input(type="text" placeholder="Name")
+                        input.input(type="text" placeholder="Email")
+                        input.input(type="text" placeholder="Password")
+
+                    button(type="submit").hero__form-button Get Started

@@ -1,0 +1,85 @@
+.reviews {
+    padding: 108px 0 100px;
+    text-align: center;
+
+    &__title {
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 64px;
+
+        &:after {
+            @include centerer-x();
+
+            content: '';
+            bottom: -32px;
+            width: 64px;
+            height: 2px;
+            background: $primary-color;
+        }
+    }
+
+    &__text {
+        margin-bottom: 58px;
+    }
+
+    &__list {
+        display: flex;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        padding: 0 15px;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__item {
+        width: 27%;
+    }
+
+    &__quote {
+        position: relative;
+        color: #86878B;
+        font-family: $ff-main;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-style: italic;
+        background: #f5f5f5;
+        padding: 25px 20px 30px 12px;
+        margin-bottom: 24px;
+
+        &:after {
+            content: '';
+            position: absolute; /* Абсолютное позиционирование */
+            left: 20px; bottom: -20px; /* Положение треугольника */
+            border: 10px solid transparent; /* Прозрачные границы */
+            border-top: 10px solid #f5f5f5; /* Добавляем треугольник */
+        }
+    }
+
+    &__photo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__customer {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+
+    &__name {
+        font-family: $ff-main;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #333;
+        margin-bottom: 12px;
+    }
+
+    &__position {
+        font-family: $ff-main;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #86878b;
+    }
+}
