@@ -3,6 +3,57 @@
     line-height: 1;
     font-weight: 600;
 
+    &__icon {
+        display: none;
+        width: 45px;
+        height: 35px;
+        position: relative;
+        cursor: pointer;
+
+        @media (max-width: 540px) {
+            display: inline-block;
+        }
+    }
+
+    &__icon-item {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+
+        &:nth-child(1) {
+            top: 0px;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+            top: 13px;
+        }
+
+        &:nth-child(4) {
+            top: 26px;
+        }
+    }
+
+    &__links {
+        @media (max-width: 540px) {
+            position: fixed;
+            display: none;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin-top: 75px;
+            background-color: #000;
+            z-index: 1000;
+            overflow: auto;
+        }
+    }
+
     &__link {
         color: #b0b0b0;
         margin-left: 50px;
@@ -19,6 +70,44 @@
 
         &:hover {
             color: #ff8b38;
+        }
+
+        @media (max-width: 540px) {
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 0;
+        }
+    }
+
+    &--state--open {
+        .nav {
+            &__icon-item {
+                &:nth-child(1) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(4) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+            }
+
+            &__links {
+                display: block;
+            }
         }
     }
 }

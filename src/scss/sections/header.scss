@@ -1,8 +1,14 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: $header-bg;
     padding: 20px 0;
 
     &__logo {
 
     }
+
+
 }

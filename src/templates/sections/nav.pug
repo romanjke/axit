@@ -1,5 +1,11 @@
-- var items = ['Features', 'About', 'Pricing', 'Reviews', 'Contact']
-
 nav.nav
-    each item in items
-        a.nav__link(href="#")= item
+    .nav__icon
+        span.nav__icon-item
+        span.nav__icon-item
+        span.nav__icon-item
+        span.nav__icon-item
+
+    .nav__links
+        - var links = ['Features', 'About', 'Pricing', 'Reviews', 'Contact']
+        each link in links
+            a.nav__link(href="#")= link

@@ -17,3 +17,19 @@ function openTab(evt, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+var nav = document.querySelector('.nav');
+var navLink = document.querySelector('.nav__link');
+
+if (nav) {
+    nav.addEventListener('click', function(e) {
+        this.classList.toggle('nav--state--open');
+    })
+}
+
+if (navLink) {
+    navLink.removeEventListener('click', function(e) {
+        this.classList.remove('nav--state--open');
+    })
+}
+

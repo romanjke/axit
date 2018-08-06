@@ -1,7 +1,12 @@
 .hero {
-    min-height: 640px;
-    background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
-    padding: 110px 0 140px;
+    background: #000;
+    padding-top: 73px;
+
+    &__inner {
+        min-height: 640px;
+        background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
+        padding: 110px 0 140px;
+    }
 
     &__logo {
         margin-bottom: 34px;
