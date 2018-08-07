@@ -1,7 +1,7 @@
 {
   "name": "axit",
   "version": "1.0.0",
-  "description": "This is langing tutorial for ITVDN students",
+  "description": "Creating a landing page using free psd template Axit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergeyamator/itvdn-landing.git"
+    "url": "git+https://github.com/romanjke/axit.git"
   },
-  "author": "Sergey Rubets",
+  "author": "Roman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sergeyamator/itvdn-landing/issues"
+    "url": "https://github.com/romanjke/axit/issues"
   },
-  "homepage": "https://github.com/sergeyamator/itvdn-landing#readme",
+  "homepage": "https://github.com/romanjke/axit",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
