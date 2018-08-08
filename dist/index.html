@@ -15,7 +15,7 @@
           <div class="header__logo"><img src="img/logo.png" alt="Логотип" width="80" height="28"></div>
           <nav class="nav">
             <div class="nav__icon"><span class="nav__icon-item"></span><span class="nav__icon-item"></span><span class="nav__icon-item"></span><span class="nav__icon-item"></span></div>
-            <div class="nav__links"><a class="nav__link" href="#">Features</a><a class="nav__link" href="#">About</a><a class="nav__link" href="#">Pricing</a><a class="nav__link" href="#">Reviews</a><a class="nav__link" href="#">Contact</a>
+            <div class="nav__links"><a class="nav__link" href="#features">features</a><a class="nav__link" href="#about">about</a><a class="nav__link" href="#pricing">pricing</a><a class="nav__link" href="#reviews">reviews</a><a class="nav__link" href="#contact">contact</a>
             </div>
           </nav>
         </div>
@@ -25,25 +25,23 @@
       <div class="hero__inner">
         <div class="container">
           <div class="row align-items-end">
-            <div class="col">
+            <div class="hero__info">
               <div class="hero__logo"><img src="img/logo.png" alt="AXIT" width="175" height="60"></div>
               <h1 class="hero__title main-title">MODERN AXURE TEMPLATE<br>FOR BEAUTIFUL PROTOTYPES</h1>
               <div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br>accumsan et viverra justo commodo.</div>
               <button class="button button--transparent" href="#">Download</button>
             </div>
-            <div class="col">
-              <form class="hero__form" method="post" action="#">
-                <div class="hero__form-header">Try Your <span class="hero__form-header-part">FREE</span> Trial Today
-                  
-                </div>
-                <div class="hero__form-fields">
-                  <input class="input" type="text" placeholder="Name">
-                  <input class="input" type="text" placeholder="Email">
-                  <input class="input" type="text" placeholder="Password">
-                </div>
-                <button class="hero__form-button" type="submit">Get Started</button>
-              </form>
-            </div>
+            <form class="hero__form" method="post" action="#">
+              <div class="hero__form-header">Try Your <span class="hero__form-header-part">FREE</span> Trial Today
+                
+              </div>
+              <div class="hero__form-fields">
+                <input class="input" type="text" placeholder="Name">
+                <input class="input" type="text" placeholder="Email">
+                <input class="input" type="text" placeholder="Password">
+              </div>
+              <button class="hero__form-button" type="submit">Get Started</button>
+            </form>
           </div>
         </div>
       </div>
@@ -61,12 +59,12 @@
               </p>
             </div>
           </div>
-          <div class="social__links"><a class="social__link" href="http://facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-f" aria-hidden="true"></i></a><a class="social__link" href="http://twitter.com" target="_blank"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i></a><a class="social__link" href="http://plus.google.com" target="_blank"><i class="fa fa-3x fa-google-plus" aria-hidden="true"></i></a><a class="social__link" href="http://pinterest.com" target="_blank"><i class="fa fa-3x fa-pinterest" aria-hidden="true"></i></a><a class="social__link" href="http://instagram.com" target="_blank"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a><a class="social__link" href="http://stumbleupon.com" target="_blank"><i class="fa fa-3x fa-stumbleupon" aria-hidden="true"></i></a><a class="social__link" href="http://#" target="_blank"><i class="fa fa-3x fa-rss" aria-hidden="true"></i></a>
+          <div class="social__links"><a class="social__link" href="http://facebook.com" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a><a class="social__link" href="http://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social__link" href="http://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a class="social__link" href="http://pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a><a class="social__link" href="http://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="social__link" href="http://stumbleupon.com" target="_blank"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a><a class="social__link" href="http://#" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <section class="features__feature1">
         <div class="container">
           <div class="tabs row">
@@ -93,7 +91,7 @@
                 </div>
                 <button class="button button--orange" href="#">Download</button>
               </div>
-              <div class="tabs__image"><img src="img/city.png" alt="Город"></div>
+              <div class="tabs__image-wrapper"><img class="tabs__image" src="img/city.png" alt="Город"></div>
             </div>
             <div class="tabs__content" id="tab2">
               <div class="tabs__info">
@@ -130,7 +128,7 @@
         <div class="container">
           <div class="row">
             <div class="features__feature2-image-wrapper"><img class="features__image" src="img/city2.png" alt="Город"></div>
-            <div class="features__info">
+            <div class="features__feature2-info">
               <h2 class="features__title alt-title">Sub list section</h2>
               <div class="features__feature2-text text">
                 <p>
@@ -176,9 +174,9 @@
       <section class="features__feature3">
         <div class="container">
           <div class="row">
-            <div class="features__info">
+            <div class="features__feature3-info">
               <h2 class="features__title alt-title">Standard Picture Section</h2>
-              <features__feature3-text class="text">
+              <div class="features__feature3-text text">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                   euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
@@ -190,14 +188,14 @@
                   bibendum laoreet.
                   
                 </p>
-              </features__feature3-text>
+              </div>
             </div>
             <div class="features__feature3-image-wrapper"><img class="features__image" src="img/city3.png" alt="Город"></div>
           </div>
         </div>
       </section>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title main-title">Why this is awesome</h2>
         <div class="about__text text">
@@ -237,7 +235,7 @@
         </ul>
       </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <h2 class="pricing__title main-title">PRICING OPTIONS</h2>
         <div class="pricing__text text">
@@ -296,7 +294,7 @@
         </ul>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <div class="h2 reviews__title main-title">What our customers are saying</div>
         <div class="reviews__text text">
@@ -361,10 +359,10 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="h2 contact__title main-title">Contact us</div>
-        <div class="reviews__text text">
+        <div class="contact__text text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           
         </div>

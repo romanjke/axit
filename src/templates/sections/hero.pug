@@ -2,7 +2,7 @@ section.hero
     .hero__inner
         .container
             .row.align-items-end
-                .col
+                .hero__info
                     .hero__logo: img(src="img/logo.png" alt="AXIT" width="175" height="60")
 
                     h1.hero__title.main-title
@@ -19,15 +19,14 @@ section.hero
 
                     button.button.button--transparent(href="#") Download
 
-                .col
-                    form(method="post" action="#").hero__form
+                form(method="post" action="#").hero__form
 
-                        .hero__form-header.
-                            Try Your #[span.hero__form-header-part FREE] Trial Today
+                    .hero__form-header.
+                        Try Your #[span.hero__form-header-part FREE] Trial Today
 
-                        .hero__form-fields
-                            input.input(type="text" placeholder="Name")
-                            input.input(type="text" placeholder="Email")
-                            input.input(type="text" placeholder="Password")
+                    .hero__form-fields
+                        input.input(type="text" placeholder="Name")
+                        input.input(type="text" placeholder="Email")
+                        input.input(type="text" placeholder="Password")
 
-                        button(type="submit").hero__form-button Get Started
+                    button(type="submit").hero__form-button Get Started

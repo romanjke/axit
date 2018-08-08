@@ -6,7 +6,12 @@
             box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
 
     &__info {
-        width: 36%;
+        width: 35%;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 
     &__title {
@@ -19,12 +24,25 @@
                 justify-content: space-between;
         -webkit-align-items: center;
                 align-items: center;
-        width: 64%;
-        padding: 0 20px;
+        width: 65%;
+        padding: 0 20px 0 63px;
+        font-size: 3em;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            font-size: 2em;
+            padding: 0;
+            -webkit-justify-content: space-around;
+                    justify-content: space-around;
+        }
     }
 
     &__link {
         text-decoration: none;
         color: #cccccc;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }

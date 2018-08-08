@@ -55,6 +55,7 @@
     }
 
     &__link {
+        display: inline-block;
         color: #b0b0b0;
         margin-left: 50px;
         text-decoration: none;
@@ -63,6 +64,7 @@
             -ms-transition: 0.5s;
              -o-transition: 0.5s;
                 transition: 0.5s;
+        text-transform: capitalize;
 
         &:first-child {
             margin-left: 0;

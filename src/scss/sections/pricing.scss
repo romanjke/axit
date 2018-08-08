@@ -4,6 +4,10 @@
     text-align: center;
     line-height: 1;
 
+    @media (max-width: 960px) {
+        padding: 40px 0;
+    }
+
     &__title {
         position: relative;
         text-transform: uppercase;
@@ -22,6 +26,10 @@
 
     &__text {
         margin-bottom: 84px;
+
+        @media (max-width: 720px) {
+            margin-bottom: 42px;
+        }
     }
 
     &__list {
@@ -32,10 +40,29 @@
                 align-items: flex-end;
         padding: 0;
         margin: 0;
+
+        @media (max-width: 720px) {
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-align-items: center;
+                    align-items: center;
+        }
     }
 
     &__item {
         width: 31%;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            max-width: 300px;
+
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__header {

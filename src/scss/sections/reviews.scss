@@ -2,6 +2,10 @@
     padding: 108px 0 100px;
     text-align: center;
 
+    @media (max-width: 960px) {
+        padding: 40px 0;
+    }
+
     &__title {
         position: relative;
         text-transform: uppercase;
@@ -20,6 +24,10 @@
 
     &__text {
         margin-bottom: 58px;
+
+        @media (max-width: 720px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__list {
@@ -29,10 +37,29 @@
         padding: 0 15px;
         margin: 0;
         text-align: left;
+
+        @media (max-width: 720px) {
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-align-items: center;
+                    align-items: center;
+        }
     }
 
     &__item {
         width: 27%;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            max-width: 300px;
+
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__quote {

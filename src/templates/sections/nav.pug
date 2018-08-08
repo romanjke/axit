@@ -6,6 +6,6 @@ nav.nav
         span.nav__icon-item
 
     .nav__links
-        - var links = ['Features', 'About', 'Pricing', 'Reviews', 'Contact']
+        - var links = ['features', 'about', 'pricing', 'reviews', 'contact']
         each link in links
-            a.nav__link(href="#")= link
+            a.nav__link(href="#" + link)= link

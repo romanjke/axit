@@ -7,6 +7,9 @@
         display: flex;
         -webkit-justify-content: center;
                 justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         font-size: 1.25rem;
         margin-bottom: 15px;
     }
@@ -14,10 +17,10 @@
     &__link {
         color: #cccccc;
         text-decoration: none;
-        margin-right: 30px;
+        margin: 0 15px;
 
-        &:last-child {
-            margin: 0;
+        &:hover {
+            color: $primary-color;
         }
     }
 

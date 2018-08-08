@@ -6,6 +6,16 @@
         min-height: 640px;
         background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
         padding: 110px 0 140px;
+
+        @media (max-width: 960px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__info {
+        @media (max-width: 960px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__logo {
@@ -38,7 +48,7 @@
     }
 
     &__form {
-        width: 360px;
+        max-width: 360px;
     }
 
     &__form-header {
@@ -58,8 +68,12 @@
     }
 
     &__form-fields {
-        padding: 30px 38px 50px 38px;
+        padding: 30px 38px 20px 38px;
         background: #fff;
+
+        @media (max-width: 960px) {
+            padding: 30px 20px 20px;
+        }
     }
 
     &__form-button {
