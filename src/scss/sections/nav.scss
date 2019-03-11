@@ -1,16 +1,16 @@
 .nav {
     display: flex;
-    line-height: 1;
     font-weight: 600;
+    line-height: 1;
 
     &__icon {
         display: none;
+        position: relative;
         width: 45px;
         height: 35px;
-        position: relative;
         cursor: pointer;
 
-        @media (max-width: 540px) {
+        @media (max-width: 768px) {
             display: inline-block;
         }
     }
@@ -18,14 +18,14 @@
     &__icon-item {
         display: block;
         position: absolute;
-        height: 6px;
+        left: 0;
         width: 100%;
-        background: #fff;
+        height: 6px;
         border-radius: 9px;
         opacity: 1;
-        left: 0;
         transform: rotate(0deg);
         transition: .25s ease-in-out;
+        background: #fff;
 
         &:nth-child(1) {
             top: 0px;
@@ -41,30 +41,35 @@
     }
 
     &__links {
-        @media (max-width: 540px) {
-            position: fixed;
+        @media (max-width: 768px) {
             display: none;
+            position: fixed;
             top: 0;
             right: 0;
             left: 0;
+            z-index: 1000;
             margin-top: 75px;
             background-color: #000;
-            z-index: 1000;
             overflow: auto;
         }
     }
 
     &__link {
         display: inline-block;
-        color: #b0b0b0;
-        margin-left: 50px;
+        margin-left: 47px;
         text-decoration: none;
-        -webkit-transition: 0.5s;
-           -moz-transition: 0.5s;
-            -ms-transition: 0.5s;
-             -o-transition: 0.5s;
-                transition: 0.5s;
         text-transform: capitalize;
+        color: #fff;
+        opacity: 0.69;
+        transition: 0.5s;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin-left: 0;
+            padding: 10px 0;
+            color: #ffffff;
+            text-align: center;
+        }
 
         &:first-child {
             margin-left: 0;
@@ -73,14 +78,6 @@
         &:hover {
             color: #ff8b38;
         }
-
-        @media (max-width: 540px) {
-            display: block;
-            padding: 10px 0;
-            text-align: center;
-            color: #ffffff;
-            margin-left: 0;
-        }
     }
 
     &--state--open {
@@ -88,8 +85,8 @@
             &__icon-item {
                 &:nth-child(1) {
                     top: 18px;
-                    width: 0%;
                     left: 50%;
+                    width: 0%;
                 }
 
                 &:nth-child(2) {
@@ -102,8 +99,8 @@
 
                 &:nth-child(4) {
                     top: 18px;
-                    width: 0%;
                     left: 50%;
+                    width: 0%;
                 }
             }
 

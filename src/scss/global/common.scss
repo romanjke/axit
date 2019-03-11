@@ -1,37 +1,63 @@
 .container {
-    max-width: 1130px;
+    max-width: 1132px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .row {
     display: flex;
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .align-items-center {
-    -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
 }
 
 .align-items-end {
-    -webkit-align-items: flex-end;
-            align-items: flex-end;
+    align-items: flex-end;
 }
 
 .main-title {
-    font-family: Raleway;
+    font-family: $ff-secondary;
     font-size: 2.25rem;
     font-weight: 400;
-    line-height: 1;
     text-transform: uppercase;
 
-    @media (max-width: 960px) {
+    @media (max-width: 576px) {
         font-size: 1.5rem;
+    }
+
+    &--level--1 {
+        position: relative;
+        margin: 0 0 68px -2px;
+        line-height: 1.2;
+        color: #fff;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            bottom: -34px;
+            width: 64px;
+            height: 2px;
+            background: #fff;
+        }
+    }
+
+    &--level--2 {
+        position: relative;
+        margin: 0 0 52px;
+        line-height: 1;
+
+        &:after {
+            @include centerer-x();
+            content: '';
+            bottom: -27px;
+            width: 64px;
+            height: 2px;
+            background: $primary-color;
+        }
     }
 }
 
@@ -41,34 +67,49 @@
     font-weight: 700;
     line-height: 1;
     color: #000;
+
+    &--with--divider {
+        position: relative;
+        margin: 0 0 56px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            width: 64px;
+            height: 2px;
+            background: $primary-color;
+        }
+    }
 }
 
 .text {
     color: #86878B;
 
     p {
-        margin: 0 0 30px;
+        margin: 0 0 21px;
 
         &:last-child {
             margin-bottom: 0;
         }
 
-        @media (max-width: 720px) {
+        @media (max-width: 576px) {
             margin: 0 0 15px;
         }
     }
 }
 
 .input {
-    padding: 11px 14px 9px;
     width: 100%;
-    margin-bottom: 30px;
+    padding: 6px 14px;
     border: none;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-    color: #bdbdbd;
     font-size: 0.875rem;
+    color: #bdbdbd;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
 
     &:focus {
         box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+
     }
 }

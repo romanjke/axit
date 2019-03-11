@@ -1,16 +1,16 @@
 section.contact#contact
-    .container
-        .h2.contact__title.main-title Contact us
+    .container.contact__container
+        h2.main-title.main-title--level--2 Contact us
 
-        .contact__text.text.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .contact__text.text
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
         form(method="post" action="#").contact__form
             .contact__form-fields
                 .contact__form-col
-                    input.input(type="text" placeholder="Name")
-                    input.input(type="text" placeholder="Email")
-                    input.input(type="text" placeholder="Subject")
+                    input.input.contact__input(type="text" placeholder="Name")
+                    input.input.contact__input(type="text" placeholder="Email")
+                    input.input.contact__input(type="text" placeholder="Subject")
 
                 .contact__form-col
                     textarea.input.contact__textarea(placeholder="Message")

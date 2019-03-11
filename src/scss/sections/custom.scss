@@ -1,48 +1,38 @@
 .custom {
-    background: url(../../img/custom-bg.jpg) center/cover no-repeat;
+    position: relative;
     min-height: 320px;
+    padding: 70px 0 60px;
     text-align: center;
+    background: #000 url(../../img/custom-bg.jpg) center/cover no-repeat;
 
-    @media (max-width: 960px) {
+    @media (max-width: 768px) {
         min-height: auto;
     }
 
-    &__inner {
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.6);
-        padding: 75px 0 62px;
+    &__overlay {
+        @include section-overlay(rgba(0,0,0,0.6));
+    }
 
-        @media (max-width: 960px) {
-            padding: 40px 0;
-            min-height: auto;
-        }
+    &__container {
+        position: relative;
+        z-index: 2;
     }
 
     &__title {
-        position: relative;
-        text-transform: uppercase;
-        margin: 0 0 64px;
-        color: #FFF;
-        line-height: 1.2;
+        margin-bottom: 56px;
+        color: #fff;
 
         &:after {
-            @include centerer-x();
-
-            content: '';
-            bottom: -32px;
-            width: 64px;
-            height: 2px;
             background: #fff;
         }
     }
 
     &__text {
+        margin: 0 0 30px;
         font-family: $ff-secondary;
         font-size: 1rem;
         font-weight: 300;
-        line-height: 1.5;
-        color: #FFF;
-        margin-bottom: 35px;
+        color: #fff;
+        opacity: 0.8;
     }
 }

@@ -1,32 +1,30 @@
 section.hero
-    .hero__inner
-        .container
-            .row.align-items-end
-                .hero__info
-                    .hero__logo: img(src="img/logo.png" alt="AXIT" width="175" height="60")
+    .hero__overlay
+    .container.hero__container
+        .row
+            .hero__info
+                img(src="img/logo.png" class="hero__logo" alt="AXIT" width="175" height="60")
 
-                    h1.hero__title.main-title
-                        | MODERN AXURE TEMPLATE
-                        br
-                        | FOR BEAUTIFUL PROTOTYPES
+                h1.main-title.main-title--level--1
+                    | MODERN AXURE TEMPLATE
+                    br
+                    | FOR BEAUTIFUL PROTOTYPES
 
-                    .hero__text
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                        br
-                        | euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                        br
-                        | accumsan et viverra justo commodo.
+                p.hero__text.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
 
-                    button.button.button--transparent(href="#") Download
+                button.button.button--transparent(href="#") Download
 
+            .hero__form-wrapper
                 form(method="post" action="#").hero__form
 
                     .hero__form-header.
                         Try Your #[span.hero__form-header-part FREE] Trial Today
 
                     .hero__form-fields
-                        input.input(type="text" placeholder="Name")
-                        input.input(type="text" placeholder="Email")
-                        input.input(type="text" placeholder="Password")
+                        input.input.hero__form-input-name(type="text" placeholder="Name")
+                        input.input.hero__form-input-email(type="text" placeholder="Email")
+                        input.input(type="password" placeholder="Password")
 
                     button(type="submit").hero__form-button Get Started

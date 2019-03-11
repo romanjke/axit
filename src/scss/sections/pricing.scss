@@ -1,62 +1,42 @@
 .pricing {
-    padding: 108px 0 96px;
-    background: $odd-bg;
-    text-align: center;
+    padding: 104px 0 96px;
     line-height: 1;
+    text-align: center;
+    background: $odd-bg;
 
-    @media (max-width: 960px) {
+    @media (max-width: 576px) {
         padding: 40px 0;
     }
 
-    &__title {
-        position: relative;
-        text-transform: uppercase;
-        margin: 0 0 64px;
-
-        &:after {
-            @include centerer-x();
-
-            content: '';
-            bottom: -32px;
-            width: 64px;
-            height: 2px;
-            background: $primary-color;
-        }
+    &__container {
+        max-width: 1140px;
     }
 
     &__text {
-        margin-bottom: 84px;
+        margin-bottom: 83px;
 
-        @media (max-width: 720px) {
+        @media (max-width: 576px) {
             margin-bottom: 42px;
         }
     }
 
     &__list {
         display: flex;
-        -webkit-justify-content: space-between;
-                justify-content: space-between;
-        -webkit-align-items: flex-end;
-                align-items: flex-end;
-        padding: 0;
-        margin: 0;
+        justify-content: space-between;
+        align-items: flex-end;
 
-        @media (max-width: 720px) {
-            -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -webkit-align-items: center;
-                    align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
     &__item {
         width: 31%;
 
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
             width: 100%;
             max-width: 300px;
-
             margin-bottom: 2rem;
 
             &:last-child {
@@ -66,24 +46,24 @@
     }
 
     &__header {
+        padding: 20px;
+        border-bottom: 1px solid #f5f5f5;
         font-family: $ff-main;
         font-size: 1.25rem;
         font-weight: 700;
-        color: #FFF;
         line-height: 1;
-        padding: 22px;
+        color: #fff;
         background: #333333;
-        border-bottom: 1px solid #f5f5f5;
     }
 
     &__payment {
-        color: #FFF;
-        padding: 30px 30px 20px;
+        padding: 30px 30px 21px;
+        color: #fff;
         background: #333333;
     }
 
     &__price {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
 
     &__price-part-1 {
@@ -102,28 +82,26 @@
     &__payment-text {
         font-family: $ff-main;
         font-size: 0.875rem;
-        font-weight: 400;
+        font-weight: 600;
         font-style: italic;
         color: #999;
     }
 
     &__popular {
-        background: $primary-color;
         min-height: 5px;
-        color: #FFF;
         font-family: $ff-main;
         font-size: 0.875rem;
         font-weight: 700;
         text-transform: uppercase;
+        color: #fff;
+        background: $primary-color;
 
         &--active {
-            padding: 15px;
+            padding: 13px;
         }
     }
 
     &__options {
-        padding: 0;
-        margin: 0;
         font-family: $ff-main;
         font-size: 0.875rem;
         color: #86878B;
@@ -132,7 +110,7 @@
     }
 
     &__option {
-        padding: 15px 0;
+        padding: 13px 0;
         border-top: 1px solid #f5f5f5;
     }
 }

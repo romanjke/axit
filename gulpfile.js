@@ -8,6 +8,7 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const srcmaps = require('gulp-sourcemaps');
+const prefix = require('gulp-autoprefixer');
 
 /* -------- Server  -------- */
 gulp.task('server', function() {
@@ -18,7 +19,7 @@ gulp.task('server', function() {
     }
   });
 
-  gulp.watch('dist/**/*').on('change', browserSync.reload);
+  gulp.watch('dist/**/*.*').on('change', browserSync.reload);
 });
 
 /* ------------ Pug compile ------------- */
@@ -34,6 +35,10 @@ gulp.task('templates:compile', function distHTML() {
 gulp.task('styles:compile', function () {
   return gulp.src('src/scss/main.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(prefix({
+      browsers: ['last 10 versions'],
+      cascade: true
+    }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('dist/css'));
 });

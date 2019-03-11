@@ -1,66 +1,73 @@
 .hero {
-    background: #000;
-    padding-top: 73px;
+    position: relative;
+    min-height: 640px;
+    padding: 110px 0 139px;
+    background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
 
-    &__inner {
-        min-height: 640px;
-        background: #000 url(../../img/hero-bg.jpg) center/cover no-repeat;
-        padding: 110px 0 140px;
+    @media (max-width: 576px) {
+        padding: 40px 0;
+    }
 
-        @media (max-width: 960px) {
-            padding: 40px 0;
-        }
+    &__overlay {
+        @include section-overlay(rgba(0,0,0,0.48));
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
     }
 
     &__info {
-        @media (max-width: 960px) {
-            margin-bottom: 2rem;
+        width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 4rem;
         }
     }
 
     &__logo {
-        margin-bottom: 34px;
-    }
-
-    &__title {
-        position: relative;
-        color: #fff;
-        margin: 0 0 82px;
-        line-height: 1.2;
-
-        &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -41px;
-            width: 64px;
-            height: 2px;
-            background: #fff;
-        }
+        margin-bottom: 21px;
     }
 
     &__text {
+        margin-bottom: 43px;
+        padding-right: 3rem;
         font-family: $ff-secondary;
+        font-size: 1rem;
         font-weight: 300;
-        line-height: 1.5;
+        line-height: 1.4;
         color: #fff;
-        margin-bottom: 45px;
+        opacity: 0.8;
+    }
+
+    &__form-wrapper {
+        width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__form {
         max-width: 360px;
+        margin-top: 29px;
+        margin-left: auto;
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
     }
 
     &__form-header {
-        background: #f5f5f5;
-        text-align: center;
+        padding: 17px;
+        border-radius: 5px 5px 0 0;
         font-family: $ff-main;
-        font-weight: 700;
         font-size: 1.25rem;
+        font-weight: 700;
         line-height: 1;
-        padding: 20px 0;
-        -webkit-border-radius: 5px 5px 0 0;
-                border-radius: 5px 5px 0 0;
+        text-align: center;
+        background: #f5f5f5;
     }
 
     &__form-header-part {
@@ -68,29 +75,33 @@
     }
 
     &__form-fields {
-        padding: 30px 38px 20px 38px;
+        padding: 30px 38px 49px;
         background: #fff;
 
-        @media (max-width: 960px) {
-            padding: 30px 20px 20px;
+        @media (max-width: 768px) {
+            padding: 30px 20px;
         }
     }
 
+    &__form-input-name {
+        margin-bottom: 36px;
+    }
+
+    &__form-input-email {
+        margin-bottom: 46px;
+    }
+
     &__form-button {
-        color: #fff;
+        width: 100%;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        font-size: 0.9375rem;
         font-weight: 600;
         line-height: 1;
+        color: #fff;
         background: $primary-color-light;
-        border: none;
-        padding: 22px 40px;
-        width: 100%;
-        -webkit-transition: 0.3s;
-           -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-             -o-transition: 0.3s;
-                transition: 0.3s;
-        -webkit-border-radius: 0 0 5px 5px;
-                border-radius: 0 0 5px 5px;
+        transition: 0.3s;
 
         &:hover {
             background: darken($primary-color-light, 15%);

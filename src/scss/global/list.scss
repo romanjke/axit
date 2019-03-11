@@ -1,21 +1,18 @@
 .list {
-    padding: 0;
-    margin: 0;
-
     &__info {
-        padding-left: 32px;
+        padding-left: 30px;
     }
 
     &__title {
+        margin: 0 0 7px;
         font-size: 0.875rem;
         font-weight: bold;
-        margin: 0 0 14px;
         line-height: 1;
     }
 
     &__item {
         display: flex;
-        margin-bottom: 42px;
+        margin-bottom: 38px;
 
         &:last-child {
             margin: 0;
@@ -27,14 +24,12 @@
         width: 40px;
         height: 40px;
         border: 2px solid $primary-color;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
+        border-radius: 50%;
         flex-shrink: 0;
     }
 
     &__icon {
         @include centerer-xy();
-
         color: $primary-color;
     }
 }

@@ -1,14 +1,16 @@
 .header {
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
-    background-color: $header-bg;
-    padding: 20px 0;
+    width: 100%;
+    padding: 21px 0 22px;
+    background-color: #000;
 
-    &__logo {
-
+    &__logo-link {
+        display: block;
     }
 
-
+    &__logo {
+        display: block;
+    }
 }

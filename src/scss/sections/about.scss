@@ -1,71 +1,57 @@
 .about {
-    padding: 108px 0 106px;
+    padding: 104px 0 102px;
     text-align: center;
     background: $even-bg;
 
-    @media (max-width: 960px) {
+    @media (max-width: 576px) {
         padding: 40px 0;
     }
 
-    &__title {
-        position: relative;
-        text-transform: uppercase;
-        margin: 0 0 64px;
-
-        &:after {
-            @include centerer-x();
-
-            content: '';
-            bottom: -32px;
-            width: 64px;
-            height: 2px;
-            background: $primary-color;
-        }
+    &__container {
+        max-width: 1150px;
     }
 
     &__text {
-        margin-bottom: 82px;
+        margin-bottom: 80px;
 
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
             margin-bottom: 42px;
         }
     }
 
     &__list {
         display: flex;
-        -webkit-justify-content: space-between;
-                justify-content: space-between;
-        padding: 0;
-        margin: 0;
+        justify-content: space-between;
 
-        @media (max-width: 720px) {
-            -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
     }
 
     &__item {
-        padding-right: 28px;
+        /*margin-right: 25px;*/
+        width: 32%;
 
-        &:last-child {
-            padding: 0;
-        }
-
-        @media (max-width: 720px) {
-            padding: 0;
-            margin-bottom: 2rem;
+        @media (max-width: 768px) {
+            width: 100%;
+            /*margin-right: 0;*/
+            margin-bottom: 2.5rem;
 
             &:last-child {
                 margin-bottom: 0;
             }
         }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__header {
+        margin: 0 0 23px;
+        font-size: 1.25rem;
         font-weight: 700;
         line-height: 1;
-        margin: 0 0 30px;
     }
 
     &__icon-wrapper {
@@ -73,17 +59,13 @@
         width: 68px;
         height: 68px;
         border: 2px solid $primary-color;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        margin: 0 auto 30px;
+        border-radius: 50%;
+        margin: 0 auto 29px;
         color: $primary-color;
     }
 
     &__icon {
         @include centerer-xy();
-    }
-
-    &__icon1 {
-
+        font-size: 2rem;
     }
 }

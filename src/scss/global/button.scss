@@ -1,19 +1,16 @@
 .button {
-    padding: 15px 30px;
-    text-decoration: none;
-    color: #fff;
+    padding: 12px 30px;
     font-family: $ff-main;
+    font-size: 0.9375rem;
     font-weight: 600;
     line-height: 1;
+    color: #fff;
+    text-decoration: none;
 
     &--transparent {
-        background: transparent;
-        -webkit-transition: 0.3s;
-         -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-           -o-transition: 0.3s;
-              transition: 0.3s;
         border: 2px solid #fff;
+        background: transparent;
+        transition: 0.3s;
 
         &:hover {
             color: $primary-color;
@@ -22,19 +19,14 @@
     }
 
     &--orange {
-        background: $primary-color;
+        padding: 14px 23px;
         border: none;
-        padding: 16px 25px;
-        -webkit-border-radius: 3px;
-                border-radius: 3px;
-        -webkit-transition: 0.3s;
-           -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-             -o-transition: 0.3s;
-                transition: 0.3s;
+        border-radius: 3px;
+        background: $primary-color;
+        transition: 0.3s;
 
         &:hover {
-            background: darken($primary-color-light, 15%);
+            background: darken($primary-color-light, 20%);
         }
     }
 }
