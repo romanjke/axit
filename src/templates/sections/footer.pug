@@ -5,7 +5,9 @@ footer.footer
             - var linkUrls = ['facebook.com', 'twitter.com', 'plus.google.com', 'pinterest.com', 'instagram.com', 'stumbleupon.com', '#']
 
             each item, key in linkItems
-                a(href="http://" + linkUrls[key] target="_blank").footer__link
+                - var link = (linkUrls[key] == '#') ? '#' : ("http://" + linkUrls[key])
+
+                a(href=link target="_blank").footer__link
                     i(class="fa fa-" + item aria-hidden="true")
 
         .footer__copy.
